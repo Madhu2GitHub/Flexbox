@@ -1,0 +1,188 @@
+<h1>Flex-layout</h1>
+<hr>
+<h3><u>Flex-container properties</u></h3>
+<div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+      <div class="panel-heading">
+          <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">flex-direction</a>
+          </h4>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse in">
+          <div class="panel-body">
+                Flexbox is a single-direction layout concept. 
+                <br>The flex-direction property defines in which direction the container wants to stack the items. 
+                <br>This establishes the main-axis, thus defining the direction flex items are placed in the flex container<br><br>
+                <ul>
+                    <li><a target="_blank" [routerLink]="['/flex-direction','row']">flex-direction:row</a></li>
+                    <li><a target="_blank" [routerLink]="['/flex-direction','row-reverse']">flex-direction:row-reverse</a></li>
+                    <li><a target="_blank"[routerLink]="['/flex-direction','column']">flex-direction:column</a></li>
+                    <li><a target="_blank" [routerLink]="['/flex-direction','column-reverse']">flex-direction:column-reverse</a></li>
+                </ul>
+          </div>
+      </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+        <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">flex-wrap</a>
+        </h4>
+    </div>
+    <div id="collapse2" class="panel-collapse collapse">
+        <div class="panel-body">
+            By default, flex items will all try to fit onto one line. 
+            <br>You can change that and allow the items to wrap as needed with this property.  
+            <br>This property defines if, and how, the container wants its children to wrap<br><br>
+            <ul>
+              <li><a target="_blank" [routerLink]="['/flex-wrap','nowrap']">nowrap</a></li>
+              <li><a target="_blank" [routerLink]="['/flex-wrap','wrap']">wrap</a></li>
+              <li><a target="_blank"[routerLink]="['/flex-wrap','wrap-reverse']">wrap-reverse</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">flex-flow</a>
+            </h4>
+        </div>
+        <div id="collapse3" class="panel-collapse collapse">
+            <div class="panel-body">
+                This is a shorthand property for setting both the flex-direction and flex-wrap properties<br><br>
+                <ul>
+                    <li><a target="_blank" [routerLink]="['/flex-flow','row','wrap']">row and wrap</a></li>
+                    <li><a target="_blank" [routerLink]="['/flex-flow','row','nowrap']">row and nowrap</a></li>
+                    <li><a target="_blank" [routerLink]="['/flex-flow','row','wrap-reverse']">row and wrap-reverse</a></li>
+                    <li><a target="_blank" [routerLink]="['/flex-flow','row-reverse','wrap']">row-reverse and wrap</a></li>
+                    <li><a target="_blank" [routerLink]="['/flex-flow','row-reverse','nowrap']">row-reverse and nowrap</a></li>
+                    <li><a target="_blank" [routerLink]="['/flex-flow','row-reverse','wrap-reverse']">row-reverse and wrap-reverse</a></li>
+                    <li><a target="_blank" [routerLink]="['/flex-flow','column','wrap']">column and wrap</a></li>
+                    <li><a target="_blank" [routerLink]="['/flex-flow','column','nowrap']">column and nowrap</a></li>
+                    <li><a target="_blank" [routerLink]="['/flex-flow','column','wrap-reverse']">column and wrap-reverse</a></li>
+                    <li><a target="_blank" [routerLink]="['/flex-flow','column-reverse','wrap']">column-reverse and wrap</a></li>
+                    <li><a target="_blank" [routerLink]="['/flex-flow','column-reverse','nowrap']">column-reverse and nowrap</a></li>
+                    <li><a target="_blank" [routerLink]="['/flex-flow','column-reverse','wrap-reverse']">column-reverse and wrap-reverse</a></li>                    
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">justify-content</a>
+            </h4>
+        </div>
+        <div id="collapse4" class="panel-collapse collapse">
+            <div class="panel-body">
+                    This defines the alignment along the main axis. 
+                    <br>It helps distribute extra free space left over when either all the flex items on a line are inflexible, 
+                    <br>or are flexible but have reached their maximum size. 
+                    <br>It also exerts some control over the alignment of items when they overflow the line<br><br>
+                <ul>
+                    <li><a target="_blank" [routerLink]="['/justify-content','flex-start']">flex-start </a></li>   
+                    <li><a target="_blank" [routerLink]="['/justify-content','flex-end']">flex-end</a></li>  
+                    <li><a target="_blank" [routerLink]="['/justify-content','center']">center</a></li>   
+                    <li><a target="_blank" [routerLink]="['/justify-content','space-between']">space-between</a></li>   
+                    <li><a target="_blank" [routerLink]="['/justify-content','space-around']">space-around</a></li>  
+                    <li><a target="_blank" [routerLink]="['/justify-content','space-evenly']">space-evenly</a></li>            
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">align-items</a>
+            </h4>
+        </div>
+        <div id="collapse5" class="panel-collapse collapse">
+            <div class="panel-body">
+                    This defines the default behavior for how flex items are laid out along the cross axis on the current line. 
+                    <br>Think of it as the justify-content version for the cross-axis (perpendicular to the main-axis).<br><br>
+                <ul>
+                    <li><a target="_blank" [routerLink]="['/align-items','flex-start']">flex-start </a></li>   
+                    <li><a target="_blank" [routerLink]="['/align-items','flex-end']">flex-end</a></li>  
+                    <li><a target="_blank" [routerLink]="['/align-items','center']">center</a></li>   
+                    <li><a target="_blank" [routerLink]="['/align-items','baseline']">baseline</a></li>   
+                    <li><a target="_blank" [routerLink]="['/align-items','stretch']">stretch</a></li>             
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">align-content</a>
+            </h4>
+        </div>  
+        <div id="collapse6" class="panel-collapse collapse">
+            <div class="panel-body">
+                    This aligns a flex container's lines within when there is extra space in the cross-axis, 
+                    <br>similar to how justify-content aligns individual items within the main-axis.
+                    <br>Note: this property has no effect when there is only one line of flex items.
+                    <br><br>
+                <ul>
+                    <li><a target="_blank" [routerLink]="['/align-content','flex-start']">flex-start </a></li>   
+                    <li><a target="_blank" [routerLink]="['/align-content','flex-end']">flex-end</a></li>  
+                    <li><a target="_blank" [routerLink]="['/align-content','center']">center</a></li>   
+                    <li><a target="_blank" [routerLink]="['/align-content','space-between']">space-between</a></li>   
+                    <li><a target="_blank" [routerLink]="['/align-content','space-around']">space-around</a></li>  
+                    <li><a target="_blank" [routerLink]="['/align-content','stretch']">stretch</a></li>        
+                </ul>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <h3><u>Flex-items properties</u></h3>
+    <hr>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse7">order</a>
+            </h4>
+        </div>  
+        <div id="collapse7" class="panel-collapse collapse">
+            <div class="panel-body">
+                Use the order property to change the order of the flexible items. 
+                <br>By default, flex items are laid out in the source order. 
+                <br>However, the order property controls the order in which they appear in the flex container<br><br>
+                <ul>
+                    <li><a target="_blank" [routerLink]="['/order','1']">one</a></li>   
+                    <li><a target="_blank" [routerLink]="['/order','0']">zero</a></li> 
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse8">flex-grow</a>
+            </h4>
+        </div>  
+        <div id="collapse8" class="panel-collapse collapse">
+            <div class="panel-body">
+                This defines the ability for a flex item to grow if necessary relative to the rest of the flex items. 
+                <br>It dictates what amount of the available space inside the flex container the item should take up.<br><br>
+                <ul>
+                    <li><a target="_blank" [routerLink]="['/flex-grow']">flex-grow demo</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse10">flex-basis</a>
+                </h4>
+            </div>  
+            <div id="collapse10" class="panel-collapse collapse">
+                <div class="panel-body">
+                    This defines the default size of an element before the remaining space is distributed. 
+                    <br>specifies the width of a flex item.<br><br>
+                    <ul>
+                        <li><a target="_blank" [routerLink]="['/flex-basis']">flex-basis demo</a></li>  
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
