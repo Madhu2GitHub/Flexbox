@@ -1,5 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { RouterTestingModule } from '@angular/router/testing';
 import { AlignItemsComponent } from './align-items.component';
 
 describe('AlignItemsComponent', () => {
@@ -8,7 +8,8 @@ describe('AlignItemsComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AlignItemsComponent ]
+      declarations: [ AlignItemsComponent ],
+      imports :[RouterTestingModule]
     })
     .compileComponents();
   }));

@@ -1,5 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { RouterTestingModule } from '@angular/router/testing';
 import { FlexFlowComponent } from './flex-flow.component';
 
 describe('FlexFlowComponent', () => {
@@ -8,7 +8,8 @@ describe('FlexFlowComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ FlexFlowComponent ]
+      declarations: [ FlexFlowComponent ],
+      imports :[RouterTestingModule]
     })
     .compileComponents();
   }));

@@ -1,5 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { RouterTestingModule } from '@angular/router/testing';
 import { FlexWrapComponent } from './flex-wrap.component';
 
 describe('FlexWrapComponent', () => {
@@ -8,7 +8,8 @@ describe('FlexWrapComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ FlexWrapComponent ]
+      declarations: [ FlexWrapComponent ],
+      imports :[RouterTestingModule]
     })
     .compileComponents();
   }));
