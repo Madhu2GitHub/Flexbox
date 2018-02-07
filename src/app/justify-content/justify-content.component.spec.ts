@@ -1,5 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import {ActivatedRoute} from '@angular/router';
 import { RouterTestingModule } from '@angular/router/testing';
+import { Observable } from 'rxjs/Observable';
 import { JustifyContentComponent } from './justify-content.component';
 
 describe('JustifyContentComponent', () => {
@@ -9,7 +11,13 @@ describe('JustifyContentComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ JustifyContentComponent ],
-      imports :[RouterTestingModule]
+      imports :[RouterTestingModule],
+      providers:[{
+        provide: ActivatedRoute,
+        useValue: {
+          params: Observable.of({justify: 'space-around'})
+        }
+      }]
     })
     .compileComponents();
   }));

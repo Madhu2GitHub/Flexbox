@@ -14,7 +14,7 @@ describe('AlignContentComponent', () => {
       providers:[{
         provide: ActivatedRoute,
         useValue: {
-          params: Observable.of({align: 'stretch'})
+          params: Observable.of({align: 'space-between'})
         }
       }]
     })

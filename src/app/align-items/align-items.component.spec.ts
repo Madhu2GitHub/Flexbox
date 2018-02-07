@@ -1,7 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { RouterTestingModule } from '@angular/router/testing';
 import { AlignItemsComponent } from './align-items.component';
-
+import {ActivatedRoute} from '@angular/router';
+import { RouterTestingModule } from '@angular/router/testing';
+import { Observable } from 'rxjs/Observable';
 describe('AlignItemsComponent', () => {
   let component: AlignItemsComponent;
   let fixture: ComponentFixture<AlignItemsComponent>;
@@ -9,7 +10,13 @@ describe('AlignItemsComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ AlignItemsComponent ],
-      imports :[RouterTestingModule]
+      imports :[RouterTestingModule],
+      providers:[{
+        provide: ActivatedRoute,
+        useValue: {
+          params: Observable.of({align: 'stretch'})
+        }
+      }]
     })
     .compileComponents();
   }));
