@@ -13,7 +13,8 @@ import { AlignContentComponent } from './align-content/align-content.component';
 import { OrderComponent } from './order/order.component';
 import { FlexGrowComponent } from './flex-grow/flex-grow.component';
 import { FlexBasisComponent } from './flex-basis/flex-basis.component';
-
+import { NgFlexComponent } from './ng-flex/ng-flex.component';
+import { FlexLayoutModule } from "@angular/flex-layout";
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,12 +27,14 @@ import { FlexBasisComponent } from './flex-basis/flex-basis.component';
     AlignContentComponent,
     OrderComponent,
     FlexGrowComponent,
-    FlexBasisComponent
+    FlexBasisComponent,
+    NgFlexComponent
   ],
   imports: [
     BrowserModule,
     RouterModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
